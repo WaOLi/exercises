@@ -1,9 +1,10 @@
+/*This program is designed to work with dynamic int arrays; I was practicing incerting an element into a dynamic array of ints*/
 #include<iostream>
-#define pi 3.1415
+#define tau 6.2830 //leftovers
 using namespace std;
 class Error {};
-void init_arr(int*& arr, int &size)
-{
+void init_arr(int*& arr, int &size) 		//*& signature is the only way I see to not copy the argument pointer and still work with the data it refers to. 
+{						//So arr has the address of the argument(pnt) and it stores the address stored by the argument(i.e. by pnt)
 	for (int i = 0; i < size; i++)
 	{
 		arr[i] = rand()%10;
