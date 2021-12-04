@@ -1,9 +1,4 @@
-﻿#define DEBUG
-#ifdef DEBUG
-
-#include <iostream>
-#include <vector>
-#include <random>
+//!!! Это тестовое задание, которое нужно было решить перед собеседованием!!!
 
 /*
     ==============================
@@ -34,6 +29,10 @@
 
     2. Предложить свои улучшения SecureBox и выявить потенциально-проблемные места в коде.
 */
+
+#include <iostream>
+#include <vector>
+#include <random>
 
 class SecureBox
 {
